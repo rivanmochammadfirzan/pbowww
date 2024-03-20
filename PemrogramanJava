@@ -1,0 +1,24 @@
+/**
+ *
+ * @author akmal
+ */
+public class Game{
+    protected String Game_Title;
+    protected String Game_Genre;
+    protected String Game_ReleaseDate;
+    protected int Game_Price;
+
+    public Game(String Game_Title, String Game_Genre, String Game_ReleaseDate, int Game_Price){
+        this.Game_ReleaseDate = Game_ReleaseDate;
+        this.Game_Title = Game_Title;
+        this.Game_Genre = Game_Genre;
+        this.Game_Price = Game_Price;
+    }
+
+    public void InfoGame(){
+        System.out.println("Nama Game     : " + Game_Title);
+        System.out.println("Genre Game    : " + Game_Genre);
+        System.out.println("Tanggal Rilis : " + Game_ReleaseDate);
+        System.out.println("Harga Game    : " + Game_Price);
+    }
+}
